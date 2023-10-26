@@ -1,0 +1,13 @@
+n= int(input('Digite a quantidade de números que você deseja saber da SEQUÊNCIA DE FIBONACCI: '))
+contador= 0
+atual= 1
+antecessor= 0
+sucessor= 0
+print('{} --> {} --> '.format(antecessor, atual), end='')
+while contador != n:
+    contador+=1
+    sucessor= antecessor+atual
+    print(sucessor, end=' --> ')
+    antecessor= atual
+    atual= sucessor
+print('THE END', end='')
